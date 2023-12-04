@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% block content %}
+
+<h1 class="text-center">Добро пожаловать {{current_user.name}} ({{current_user.email}})!</h1>
+<h2>Роль: {{ ROLES[current_user.role] }}</h2>
+<p>Этап - Компетенция - Список участников -> Оценочный лист участника + последний пункт
+"Введите комментарий, если считаете это необходимым".</p>
+
+{% if config.debug %}
+<p>Текущий пользователь: {{current_user}}</p>
+{% endif %}
+{% endblock %}

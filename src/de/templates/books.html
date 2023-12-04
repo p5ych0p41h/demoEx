@@ -1,0 +1,7 @@
+<html>
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <div>{{ form.library.label }}: {{ form.library() }}</div>
+    <div>{{ form.books.label }}: {{ form.books() }}</div>
+    <div>{{ form.submit.label }}: {{ form.submit() }}</div>
+</html>
